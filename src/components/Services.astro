@@ -1,0 +1,123 @@
+---
+import { siteData } from '../data/siteData';
+---
+
+<section id="services" class="py-14 md:py-16 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Heading with Scaled Font Sizes -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      <div class="max-w-3xl">
+        <span class="text-xs sm:text-sm font-sans uppercase tracking-wider text-[#18a692] font-bold">
+          Core Practice Areas
+        </span>
+        <h2 
+          class="text-3xl sm:text-4xl lg:text-5xl font-serif italic instrument-italic premium-italic text-[#0a2b4e] mt-1 tracking-tight"
+          style="font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif; font-style: italic;"
+        >
+          Specialist Sterile Advisory Catalogue
+        </h2>
+        <p class="text-base sm:text-lg text-slate-700 mt-2 leading-relaxed">
+          Six focused technical practices bridging cleanroom shop-floor realities with global regulatory authority expectations.
+        </p>
+      </div>
+
+      <div>
+        <a
+          href="#contact"
+          class="inline-flex items-center text-sm font-bold text-[#0a2b4e] hover:text-[#18a692] transition-colors group"
+        >
+          <span>Discuss Scope Requirements</span>
+          <svg class="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Border-less Gradient Practice Cards (No Rigid AI Boxes) -->
+    <div class="space-y-7">
+      {siteData.servicePillars.map(pillar => (
+        <div class="p-7 sm:p-10 rounded-3xl bg-gradient-to-br from-white via-[#fbfdfd] to-[#edf7f5]/50 border-0 shadow-[0_10px_35px_-8px_rgba(10,43,78,0.05)] hover:shadow-[0_16px_45px_-8px_rgba(24,166,146,0.12)] transition-all duration-300">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Info (5 cols) -->
+            <div class="lg:col-span-5 space-y-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xs sm:text-sm font-sans font-bold text-white bg-[#0a2b4e] px-3 py-1 rounded-md shadow-2xs">
+                  {pillar.number}
+                </span>
+                <span class="text-xs font-sans text-[#18a692] font-bold tracking-wide uppercase bg-gradient-to-r from-[#f0faf8] to-[#e4f3f0] px-3 py-1 rounded-md border-0 shadow-2xs">
+                  {pillar.badge}
+                </span>
+              </div>
+
+              <h3 class="text-2xl sm:text-3xl font-bold text-[#0a2b4e] tracking-tight">
+                {pillar.name}
+              </h3>
+
+              <div 
+                class="text-sm sm:text-base font-serif italic instrument-italic premium-italic text-[#18a692] font-semibold"
+                style="font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif; font-style: italic;"
+              >
+                {pillar.headline}
+              </div>
+
+              <p class="text-sm sm:text-base text-slate-700 leading-relaxed pt-1 font-sans">
+                {pillar.description}
+              </p>
+
+              <div class="pt-2">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center text-sm font-bold text-[#0a2b4e] hover:text-[#18a692] transition-colors gap-1.5"
+                >
+                  <span>Inquire on this advisory scope</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Scope & Deliverables: Border-less Soft Gradient Panel -->
+            <div class="lg:col-span-7 bg-gradient-to-br from-[#f0faf8] via-[#e6f5f2] to-[#daf1ed]/60 rounded-2xl p-6 sm:p-7 border-0 shadow-2xs space-y-5">
+              
+              <!-- Key Execution Scope with Sans-Serif Typography -->
+              <div class="space-y-2">
+                <span class="text-xs sm:text-sm font-sans uppercase tracking-wider text-[#0a2b4e] font-bold block">
+                  Engagement Scope &amp; Focus
+                </span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm sm:text-base text-slate-800">
+                  {pillar.points.map(pt => (
+                    <div class="flex items-start gap-2.5 leading-relaxed font-sans">
+                      <span class="text-[#18a692] font-bold mt-0.5">•</span>
+                      <span>{pt}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <!-- Deliverables with Sans-Serif Typography -->
+              <div class="pt-4 border-t border-[#b5e8df]/70">
+                <span class="text-xs sm:text-sm font-sans uppercase tracking-wider text-slate-600 font-bold block mb-2">
+                  Concrete Work Products
+                </span>
+                <div class="flex flex-wrap gap-2">
+                  {pillar.deliverables.map(deliv => (
+                    <span class="text-xs sm:text-sm font-sans font-medium px-3.5 py-1.5 rounded-lg bg-white/95 border-0 text-[#0a2b4e] shadow-2xs">
+                      {deliv}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

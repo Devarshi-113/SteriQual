@@ -1,0 +1,93 @@
+---
+import { siteData } from '../data/siteData';
+---
+
+<section id="models" class="py-14 md:py-16 bg-white border-t border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Heading -->
+    <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+      <span class="text-xs sm:text-sm font-sans uppercase tracking-wider text-[#18a692] font-bold">
+        Collaboration Architecture
+      </span>
+      <h2 
+        class="text-3xl sm:text-4xl lg:text-5xl font-serif italic instrument-italic premium-italic text-[#0a2b4e] tracking-tight"
+        style="font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif; font-style: italic;"
+      >
+        Flexible Engagement Models
+      </h2>
+      <p class="text-base sm:text-lg text-slate-700 leading-relaxed">
+        Engage senior pharmaceutical QA leadership on terms that fit your operational cadence—from focused on-site audit interventions to strategic retainer advisory.
+      </p>
+    </div>
+
+    <!-- Models Grid with Border-less Gradient Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {siteData.engagementModels.map(model => (
+        <div class="flex flex-col justify-between p-7 sm:p-8 rounded-3xl bg-gradient-to-b from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_8px_30px_-6px_rgba(10,43,78,0.05)] hover:shadow-[0_14px_40px_-6px_rgba(24,166,146,0.12)] transition-all group">
+          <div>
+            <span class="text-xs font-sans uppercase tracking-wider text-[#18a692] font-bold px-3 py-1 rounded-md bg-gradient-to-r from-[#f0faf8] to-[#e4f3f0] border-0 shadow-2xs inline-block mb-4">
+              {model.badge}
+            </span>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-[#0a2b4e] mb-2 group-hover:text-[#18a692] transition-colors">
+              {model.title}
+            </h3>
+
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed mb-4 font-sans">
+              {model.description}
+            </p>
+
+            <ul class="space-y-2.5 pt-4 border-t border-slate-100/80 text-sm sm:text-base text-slate-800 font-sans">
+              {model.features.map(f => (
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#18a692] font-bold mt-0.5">•</span>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100/80">
+            <a
+              href="#contact"
+              class="inline-flex items-center text-sm font-bold text-[#0a2b4e] hover:text-[#18a692] transition-colors gap-1.5"
+            >
+              <span>Explore this arrangement</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Why Engage Independent Senior Advisor: Border-less Gradient Banner -->
+    <div class="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#f0faf8] via-[#f7fcfa] to-[#e8f5f2] border-0 shadow-[0_8px_30px_-6px_rgba(10,43,78,0.05)] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+      <div class="max-w-3xl space-y-2">
+        <span class="text-xs sm:text-sm font-sans font-bold uppercase tracking-wider text-[#0a2b4e] flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-[#18a692]"></span>
+          <span>Advisory Principles &amp; Governance</span>
+        </span>
+        <h4 
+          class="text-xl sm:text-2xl lg:text-3xl font-serif italic instrument-italic premium-italic text-[#0a2b4e]"
+          style="font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif; font-style: italic;"
+        >
+          Why Engage an Independent Senior QA Advisor?
+        </h4>
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-sans">
+          Clients receive direct access to senior QA experience, an objective view of quality risks, and practical recommendations prioritised by patient risk, compliance impact, and operational feasibility. The consultant advises and supports; the manufacturer retains its statutory responsibilities, quality decisions, and batch disposition authority.
+        </p>
+      </div>
+
+      <div class="shrink-0">
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center px-7 py-3.5 rounded-xl bg-[#0a2b4e] hover:bg-[#18a692] text-white font-bold text-sm shadow-md shadow-[#0a2b4e]/20 hover:shadow-[#18a692]/25 transition-all hover:-translate-y-0.5 whitespace-nowrap"
+        >
+          Initiate Confidential Discussion
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,23 @@
+---
+import { siteData } from '../data/siteData';
+const whatsappUrl = `https://wa.me/${siteData.contact.whatsappNumber}?text=${encodeURIComponent(siteData.contact.whatsappMessage)}`;
+---
+
+<aside class="fixed bottom-6 right-6 z-40 flex items-center group" aria-label="Direct WhatsApp Contact">
+  <!-- Tooltip on hover (desktop) -->
+  <span class="mr-3 hidden md:inline-block px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-slate-700 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+    Direct WhatsApp Consultation
+  </span>
+
+  <a
+    href={whatsappUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with our Principal Consultant on WhatsApp"
+    class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-lg shadow-emerald-500/30 transition-all hover:scale-110 focus:outline-none focus:ring-4 focus:ring-emerald-500/20"
+  >
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.69C8.86 7.69 8.56 7.76 8.32 8.02C8.07 8.28 7.39 8.92 7.39 10.22C7.39 11.52 8.34 12.78 8.47 12.95C8.6 13.12 10.3 15.89 12.97 16.94C15.19 17.81 15.64 17.64 16.12 17.59C16.6 17.55 17.67 16.96 17.89 16.33C18.11 15.7 18.11 15.16 18.04 15.05C17.97 14.94 17.8 14.88 17.54 14.75C17.29 14.62 16.03 14 15.8 13.91C15.57 13.82 15.4 13.78 15.23 14.04C15.06 14.3 14.58 14.88 14.43 15.05C14.28 15.22 14.13 15.24 13.88 15.11C13.63 14.98 12.82 14.72 11.86 13.86C11.11 13.19 10.6 12.36 10.45 12.11C10.3 11.86 10.43 11.72 10.56 11.59C10.68 11.47 10.82 11.28 10.96 11.12C11.1 10.96 11.15 10.84 11.24 10.67C11.33 10.5 11.28 10.35 11.22 10.22C11.15 10.1 10.65 8.87 10.44 8.37C10.25 7.89 10.05 7.95 9.89 7.95C9.75 7.94 9.58 7.69 9.04 7.69Z"/>
+    </svg>
+  </a>
+</aside>

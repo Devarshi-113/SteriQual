@@ -1,0 +1,75 @@
+---
+import { siteData } from '../data/siteData';
+---
+
+<section id="audits" class="py-14 md:py-16 bg-slate-50/70 border-y border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      
+      <!-- Left Editorial Column (5 cols) -->
+      <div class="lg:col-span-5 space-y-4">
+        <span class="text-xs sm:text-sm font-sans uppercase tracking-wider text-[#18a692] font-bold">
+          Inspection Track Record
+        </span>
+        <h2 
+          class="text-3xl sm:text-4xl lg:text-5xl font-serif italic instrument-italic premium-italic text-[#0a2b4e] leading-tight"
+          style="font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif; font-style: italic;"
+        >
+          Over 35 Health Authority Audits Faced &amp; Cleared.
+        </h2>
+        <p class="text-base sm:text-lg text-slate-700 leading-relaxed">
+          Unlike advisory firms run by theoretical consultants, SteriQual's guidance is anchored in real-world regulatory defense. All audit milestones below were personally steered and successfully defended by Principal Consultant <strong>{siteData.founder.fullName}</strong> during his executive QA tenures.
+        </p>
+
+        <!-- Borderless Gradient Distinction Box -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-[#f0faf8] to-[#e4f3f0] border-0 space-y-2 mt-4 shadow-2xs">
+          <div class="text-sm font-sans text-[#0a2b4e] font-bold tracking-wide flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-[#18a692]"></span>
+            <span>Inspection Distinction</span>
+          </div>
+          <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+            Spanning commercial sterile formulation plants, multi-line aseptic filling (SVP, PFS, Lyophilized), and API facilities across India's largest pharmaceutical manufacturers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Ledger Column: Border-less Gradient Card -->
+      <div class="lg:col-span-7 bg-gradient-to-b from-white via-[#fbfdfd] to-[#edf7f5]/40 rounded-3xl border-0 shadow-[0_12px_40px_-10px_rgba(10,43,78,0.06)] p-6 sm:p-8 divide-y divide-slate-100">
+        
+        {siteData.founderAuditTallies.map((item, index) => (
+          <div class="py-4 first:pt-0 last:pb-0 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 group">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xs sm:text-sm font-sans text-teal-600/70 font-semibold">0{index + 1}</span>
+                <span class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#18a692] transition-colors font-sans">
+                  {item.agency}
+                </span>
+              </div>
+              <p class="text-sm text-slate-600 pl-7 font-sans">
+                {item.desc}
+              </p>
+            </div>
+            
+            <!-- Audit Count Chip with Clean Sans-Serif and Soft Gradient -->
+            <div class="sm:text-right shrink-0 pl-7 sm:pl-0 pt-1 sm:pt-0">
+              <span class="text-base sm:text-lg font-bold text-[#0a2b4e] group-hover:text-[#18a692] font-sans tracking-normal bg-gradient-to-r from-[#f0faf8] to-[#e4f3f0] px-4 py-1.5 rounded-xl border-0 shadow-2xs transition-colors">
+                {item.count}
+              </span>
+            </div>
+          </div>
+        ))}
+
+      </div>
+
+    </div>
+
+    <!-- Fine Note -->
+    <div class="mt-8 text-center">
+      <p class="text-xs sm:text-sm text-slate-500 font-sans">
+        * Specific sites, products, inspection dates, and outcomes can be discussed directly with Mr. Dave where confidentiality agreements permit.
+      </p>
+    </div>
+
+  </div>
+</section>

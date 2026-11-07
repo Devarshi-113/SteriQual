@@ -1,0 +1,88 @@
+---
+import { siteData } from '../data/siteData';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-slate-50 border-t border-slate-200 text-slate-600 text-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      
+      <!-- Company Overview (2 cols) -->
+      <div class="lg:col-span-2 space-y-4">
+        <div>
+          <a href="#" class="inline-block transition-transform hover:scale-[1.02]">
+            <img 
+              src="/steriqual-logo.svg" 
+              alt={`${siteData.company.legalName} - Quality & Sterility Consulting`} 
+              class="h-11 w-auto"
+            />
+          </a>
+        </div>
+
+        <p class="text-sm text-slate-700 max-w-sm leading-relaxed">
+          {siteData.company.subheadline}
+        </p>
+
+        <div class="pt-1 text-xs sm:text-sm font-sans text-slate-600">
+          Principal Consultant: <strong class="text-[#0a2b4e]">{siteData.founder.fullName}</strong> ({siteData.contact.location})
+        </div>
+
+        <p class="text-xs text-slate-500 leading-relaxed max-w-sm pt-1 font-sans">
+          {siteData.company.disclaimer}
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-3">
+        <h4 class="text-xs sm:text-sm font-sans font-bold uppercase tracking-wider text-[#0a2b4e]">Practice Offerings</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#services" class="hover:text-[#18a692] transition-colors">Sterility Assurance &amp; CCS</a></li>
+          <li><a href="#services" class="hover:text-[#18a692] transition-colors">Audit Readiness &amp; War Room</a></li>
+          <li><a href="#services" class="hover:text-[#18a692] transition-colors">Warning Letter / 483 Remediation</a></li>
+          <li><a href="#services" class="hover:text-[#18a692] transition-colors">QMS &amp; Six Quality Systems</a></li>
+          <li><a href="#services" class="hover:text-[#18a692] transition-colors">Microbiology Lab &amp; Isolators</a></li>
+          <li><a href="#services" class="hover:text-[#18a692] transition-colors">Equipment Qualification &amp; CSV</a></li>
+        </ul>
+      </div>
+
+      <!-- Scope Reference -->
+      <div class="space-y-3">
+        <h4 class="text-xs sm:text-sm font-sans font-bold uppercase tracking-wider text-[#0a2b4e]">Dosage Focus</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><span class="text-slate-700">Small Volume Parenterals (SVP)</span></li>
+          <li><span class="text-slate-700">Lyophilized Injections</span></li>
+          <li><span class="text-slate-700">Pre-filled Syringes (PFS)</span></li>
+          <li><span class="text-slate-700">Ophthalmic &amp; Sterile Liquids</span></li>
+          <li><span class="text-slate-700">EU-GMP Annex 1 Compliance</span></li>
+        </ul>
+      </div>
+
+      <!-- Direct Contact Column -->
+      <div class="space-y-3">
+        <h4 class="text-xs sm:text-sm font-sans font-bold uppercase tracking-wider text-[#0a2b4e]">Direct Inquiries</h4>
+        <p class="text-sm text-slate-600 font-sans">
+          Direct advisory line for plant heads, promoters &amp; quality executives:
+        </p>
+        <div class="space-y-2 text-sm font-sans">
+          <div><a href={`tel:${siteData.contact.phone}`} class="text-[#0a2b4e] font-bold hover:text-[#18a692] transition-colors">{siteData.contact.phoneDisplay}</a></div>
+          <div><a href={`mailto:${siteData.contact.email}`} class="text-[#0a2b4e] hover:text-[#18a692] font-semibold transition-colors">{siteData.contact.email}</a></div>
+          <div class="text-xs text-slate-500 pt-1 font-sans">{siteData.contact.engagementReach}</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="mt-14 pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-slate-500 gap-4">
+      <div>
+        © {currentYear} {siteData.company.legalName}. All rights reserved.
+      </div>
+      <div class="flex items-center gap-6">
+        <span class="text-slate-500">Independent Specialist Advisory</span>
+        <a href="#contact" class="hover:text-[#18a692] transition-colors">Confidentiality Guarantee</a>
+      </div>
+    </div>
+
+  </div>
+</footer>

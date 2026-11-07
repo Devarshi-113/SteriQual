@@ -1,0 +1,79 @@
+/* 1. Local High-Performance @font-face for Instrument Serif (Guaranteed offline / firewall / adblock-proof) */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/instrument-serif-italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/instrument-serif-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Backward-compatibility fallback @font-face for Playfair Display */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('/fonts/playfair-display-italic.woff2') format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    @apply bg-white text-slate-800 antialiased selection:bg-[#18a692] selection:text-white;
+  }
+}
+
+/* Explicit, foolproof typography reinforcement for Instrument Serif in Italics */
+.font-serif,
+.instrument-serif,
+.premium-serif,
+.playfair-display {
+  font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif !important;
+}
+
+.font-serif.italic,
+.instrument-italic,
+.playfair-italic,
+.premium-italic {
+  font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif !important;
+  font-style: italic !important;
+}
+
+@layer utilities {
+  .text-glow-teal {
+    text-shadow: 0 0 24px rgba(24, 166, 146, 0.35);
+  }
+
+  .text-glow-navy {
+    text-shadow: 0 0 24px rgba(10, 43, 78, 0.25);
+  }
+
+  .border-glow-teal {
+    box-shadow: 0 0 25px -5px rgba(24, 166, 146, 0.2);
+  }
+
+  .grid-pattern {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(10, 43, 78, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(10, 43, 78, 0.03) 1px, transparent 1px);
+  }
+}

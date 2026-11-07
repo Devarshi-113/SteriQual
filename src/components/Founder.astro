@@ -1,0 +1,169 @@
+---
+import { siteData } from '../data/siteData';
+---
+
+<section id="founder" class="py-14 md:py-16 bg-slate-50/70 border-t border-slate-100 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    
+    <!-- Section Header with Editorial Styling -->
+    <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+      <span class="text-xs sm:text-sm font-sans uppercase tracking-wider text-[#18a692] font-bold">
+        Executive Profile
+      </span>
+      <h2 
+        class="text-3xl sm:text-4xl lg:text-5xl font-serif italic instrument-italic premium-italic text-[#0a2b4e] tracking-tight"
+        style="font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif; font-style: italic;"
+      >
+        Principal Consultant Leadership
+      </h2>
+      <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-sans">
+        SteriQual client engagements are led directly by Pinkalkumar Dave—bringing 30 years of continuous shop-floor QA leadership (August 1996 – Present) from India's premier sterile pharmaceutical enterprises.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      
+      <!-- Founder Visual & Credential Dossier: Border-less Gradient Card (5 cols) -->
+      <div class="lg:col-span-5">
+        <div class="relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_40px_-10px_rgba(10,43,78,0.06)]">
+          
+          <!-- Avatar Placeholder / Portrait Frame -->
+          <div class="relative mx-auto w-44 h-44 sm:w-52 sm:h-52 rounded-2xl bg-slate-100 p-1 mb-6 border-0 shadow-inner">
+            <div class="w-full h-full rounded-2xl bg-slate-50 flex flex-col items-center justify-center text-slate-400 overflow-hidden relative">
+              <svg class="w-20 h-20 text-slate-300" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 2.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-xs font-sans text-slate-400 mt-2 font-medium">[Executive Portrait]</span>
+            </div>
+            <!-- Experience badge on avatar in Deep Blue -->
+            <div class="absolute -bottom-3 -right-3 bg-[#0a2b4e] text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-sans font-bold shadow-md border-2 border-white flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-[#18a692]"></span>
+              <span>{siteData.founder.experienceYears} Tenure</span>
+            </div>
+          </div>
+
+          <!-- Name & Designation -->
+          <div class="text-center space-y-1.5">
+            <h3 class="text-2xl sm:text-3xl font-bold text-[#0a2b4e] tracking-tight">{siteData.founder.fullName}</h3>
+            <p class="text-base sm:text-lg font-semibold text-[#18a692] font-sans">{siteData.founder.title}</p>
+            <p class="text-xs sm:text-sm font-sans text-slate-600 font-medium">{siteData.founder.designationHistory}</p>
+            <p class="text-xs text-slate-500 font-sans pt-0.5">{siteData.founder.location}</p>
+          </div>
+
+          <!-- Academic Qualifications (Static Tabular Format on Border-less Card) -->
+          <div class="mt-6 pt-5 border-t border-slate-100/80 space-y-3">
+            <span class="text-xs sm:text-sm font-sans uppercase tracking-wider text-[#0a2b4e] font-bold block">
+              Academic Credentials
+            </span>
+            <div class="rounded-xl bg-white/95 border-0 shadow-2xs overflow-hidden">
+              <!-- Header Row -->
+              <div class="grid grid-cols-12 gap-1.5 bg-gradient-to-r from-[#f0faf8] to-[#e4f3f0] px-3.5 py-2 text-[11px] font-sans uppercase tracking-wider font-bold text-[#0a2b4e]">
+                <div class="col-span-5 sm:col-span-5">Qualification</div>
+                <div class="col-span-5 sm:col-span-5">Institution</div>
+                <div class="col-span-2 text-right">Year</div>
+              </div>
+              <!-- Rows -->
+              <div class="divide-y divide-slate-100/80">
+                {siteData.founder.education.map((edu, idx) => (
+                  <div class={`grid grid-cols-12 gap-1.5 px-3.5 py-2.5 text-xs items-start font-sans ${idx % 2 === 0 ? "bg-white" : "bg-slate-50/40"}`}>
+                    <div class="col-span-5 sm:col-span-5 font-bold text-slate-900 leading-snug">
+                      {edu.degree}
+                    </div>
+                    <div class="col-span-5 sm:col-span-5 text-slate-600 leading-snug text-[11px] sm:text-xs">
+                      {edu.institution}
+                    </div>
+                    <div class="col-span-2 text-right font-sans font-semibold text-slate-500 text-[11px] sm:text-xs">
+                      {edu.year}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Engagement Commitment: Soft Borderless Gradient -->
+          <div class="mt-6 pt-4 border-t border-slate-100 bg-gradient-to-br from-[#f0faf8] to-[#e4f3f0] -mx-4 -mb-4 p-5 rounded-b-2xl border-0">
+            <div class="text-xs sm:text-sm font-sans text-[#0a2b4e] font-bold flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#18a692]"></span>
+              <span>Direct Principal-Led Oversight</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 mt-1.5 leading-relaxed font-sans">
+              All advisory scopes, mock audits, and documentation reviews are conducted personally by Pinkalkumar Dave—never delegated to junior associates.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Career History Ledger (7 cols) -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <div>
+          <h3 
+            class="text-2xl sm:text-3xl lg:text-4xl font-serif italic instrument-italic premium-italic text-[#0a2b4e] tracking-tight"
+            style="font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif; font-style: italic;"
+          >
+            30 Years of Senior Quality Leadership
+          </h3>
+          <p class="text-base sm:text-lg text-slate-700 mt-2.5 leading-relaxed font-sans">
+            {siteData.founder.summary}
+          </p>
+        </div>
+
+        <!-- Career Progression Timeline with Border-less Gradient Cards -->
+        <div class="space-y-3.5 pt-1">
+          <span class="text-xs sm:text-sm font-sans uppercase tracking-wider text-[#18a692] font-bold block">
+            Senior Corporate Quality Roles
+          </span>
+
+          <div class="space-y-3">
+            {siteData.founder.careerTrack.map(item => (
+              <div class="p-5.5 sm:p-6 rounded-2xl bg-gradient-to-r from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_4px_20px_-4px_rgba(10,43,78,0.04)] hover:shadow-md transition-all">
+                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
+                  <span class="text-base sm:text-lg font-bold text-[#0a2b4e]">{item.company}</span>
+                  <span class="text-xs sm:text-sm font-sans text-[#0a2b4e] font-bold bg-gradient-to-r from-[#f0faf8] to-[#e4f3f0] px-3 py-0.5 rounded-md border-0 shadow-2xs">
+                    {item.period}
+                  </span>
+                </div>
+                <div class="text-sm sm:text-base font-semibold text-slate-800 mb-1 font-sans">{item.role}</div>
+                <p class="text-sm text-slate-600 leading-relaxed font-sans">{item.details}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Founder Quote Box with Serif Italic Accent & Border-less Gradient -->
+        <div class="p-6 rounded-2xl bg-gradient-to-r from-[#fbfdfd] to-[#f0faf8] border-l-4 border-l-[#18a692] border-0 text-slate-700 relative shadow-2xs">
+          <p 
+            class="text-sm sm:text-base font-serif italic instrument-italic premium-italic text-[#0a2b4e] leading-relaxed"
+            style="font-family: 'Instrument Serif', Georgia, Cambria, 'Times New Roman', serif; font-style: italic;"
+          >
+            "{siteData.founder.quote}"
+          </p>
+          <div class="mt-2.5 text-xs sm:text-sm font-sans text-[#18a692] font-bold">
+            — {siteData.founder.fullName}, Principal Consultant
+          </div>
+        </div>
+
+        <!-- Action Row -->
+        <div class="pt-2 flex flex-wrap items-center gap-3.5">
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-bold text-white bg-[#0a2b4e] hover:bg-[#18a692] rounded-xl shadow-md shadow-[#0a2b4e]/20 hover:shadow-[#18a692]/25 transition-all hover:-translate-y-0.5"
+          >
+            Schedule Consultation with Mr. Dave
+          </a>
+          <a
+            href={`mailto:${siteData.contact.email}`}
+            class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-[#0a2b4e] bg-gradient-to-r from-[#f0faf8] to-[#e4f3f0] hover:from-[#e4f3f0] hover:to-[#d2ece6] hover:text-[#106c60] rounded-xl border-0 transition-colors shadow-2xs"
+          >
+            Direct Email: {siteData.contact.email}
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
