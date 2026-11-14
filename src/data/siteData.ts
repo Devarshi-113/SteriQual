@@ -36,7 +36,7 @@ export const siteData = {
   contact: {
     founderName: "Pinkal Dave",
     founderShortName: "Pinkal Dave",
-    title: "Founder & Independent Senior QA Consultant",
+    title: "Founder and Principal Consultant – Quality, Compliance & Sterile Operations",
     formerTitle: "Former Site Quality Head / Director – Quality",
     email: "pinkaldave13@gmail.com",
     phone: "+91 98795 61480",
@@ -404,15 +404,41 @@ export const siteData = {
   founder: {
     fullName: "Pinkal Dave",
     displayName: "Pinkal Dave",
-    title: "Founder & Principal QA Consultant",
+    title: "Founder and Principal Consultant – Quality, Compliance & Sterile Operations",
     designationHistory: "Former Site Quality Head / Director – Quality",
-    educationDegrees: "B.Sc. & M.Sc. (Microbiology), MBA (Personnel), MDPM",
-    experienceYears: "30 Years",
+    educationDegrees: "M.Sc. (Microbiology), MDPM, MBA (Personnel)",
+    experienceYears: "Nearly Three Decades",
     location: "Vadodara, Gujarat, India",
     email: "pinkaldave13@gmail.com",
     phone: "+91 98795 61480",
-    summary: "Accomplished Site Quality Head and Senior Quality Leader with 30 years of continuous hands-on pharmaceutical experience (August 1996 – Present) across Sun Pharma, Alembic, Emcure, Zydus, and Intas, having steered over 35 major regulatory inspections by USFDA, EU/MHRA, Health Canada, TGA, and ANVISA.",
+    summary: "Pinkal Dave is a seasoned pharmaceutical quality and compliance leader with nearly three decades of experience across globally regulated pharmaceutical manufacturing environments. Throughout his distinguished career, he has held senior leadership positions with leading pharmaceutical organizations including Sun Pharmaceutical Industries, Emcure Pharmaceuticals, Intas Pharmaceuticals, LIVA Pharmaceuticals (Now Zydus), Alembic Pharmaceuticals, and Innoxel Lifesciences.",
     quote: "True regulatory compliance is never achieved through cosmetic documentation prepared weeks before an audit. It is an engineered culture where sterility assurance and data integrity are governed by scientific discipline on the cleanroom floor.",
+    
+    dosageExpertise: [
+      "Injectables",
+      "Lyophilized Products",
+      "Ophthalmics",
+      "Prefilled Syringes (PFS)",
+      "Oral Solids",
+      "Oncology Products",
+      "Hormones",
+      "Nasal Dosage Forms",
+    ],
+
+    consultingExpertise: [
+      "Quality Management System (QMS) design, assessment, and remediation",
+      "Regulatory inspection readiness and mock audits",
+      "Data Integrity and GMP compliance programs",
+      "Sterile manufacturing and aseptic process assurance",
+      "Site quality leadership and quality transformation initiatives",
+      "Investigation management (Deviation, OOS, OOT, CAPA)",
+      "Qualification and validation programs",
+      "Technology transfer and product commercialization support",
+      "Greenfield and brownfield facility quality system implementation",
+      "Regulatory response strategy and audit remediation",
+      "Operational excellence and quality performance improvement",
+      "Training, coaching, and leadership development for quality organizations",
+    ],
     
     // Exact career progression from resume
     careerTrack: [
