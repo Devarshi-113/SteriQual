@@ -51,7 +51,7 @@ export const siteData = {
 
   // Note: All statistics strictly represent the Founder's personal track record across 30 years (August 1996 – Present)
   founderMetrics: [
-    { value: "30", label: "Years, Founder's Quality Leadership", sublabel: "Since August 1996" },
+    { value: "30", label: "Years Experience of Founder's Quality Leadership", sublabel: "Since August 1996" },
     { value: "30+", label: "Highly Regulated Audits", sublabel: "Including USFDA, EMA, Canada and TGA" },
     { value: "100+", label: "Global Customer Audits", sublabel: "Faced across multi-product sterile facilities" },
   ] as Metric[],
