@@ -62,17 +62,22 @@ const leadingOrganizations = [
       <div class="lg:col-span-5 space-y-6">
         <div class="relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_40px_-10px_rgba(10,43,78,0.06)]">
           
-          <!-- Avatar Placeholder / Portrait Frame -->
-          <div class="relative mx-auto w-44 h-44 sm:w-52 sm:h-52 rounded-2xl bg-slate-100 p-1 mb-6 border-0 shadow-inner">
-            <div class="w-full h-full rounded-2xl bg-slate-50 flex flex-col items-center justify-center text-slate-400 overflow-hidden relative">
-              <svg class="w-20 h-20 text-slate-300" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 2.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
-              </svg>
-              <span class="text-xs font-sans text-slate-400 mt-2 font-medium">[Executive Portrait]</span>
-            </div>
+          <!-- Executive Portrait Frame -->
+          <div class="relative mx-auto w-56 sm:w-64 max-w-full aspect-[3/4] rounded-2xl overflow-hidden mb-6 shadow-md shadow-[#0a2b4e]/10 border-2 border-white ring-1 ring-slate-200/70 bg-slate-100 group">
+            <img 
+              src="/pinkal-dave.jpg" 
+              alt={`${siteData.founder.fullName} - Founder & Principal Consultant`}
+              class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              loading="eager"
+              width="768"
+              height="1024"
+            />
+            <!-- Subtle gradient vignette overlay for depth -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a2b4e]/30 via-transparent to-transparent pointer-events-none"></div>
+
             <!-- Experience badge on avatar in Deep Blue -->
-            <div class="absolute -bottom-3 -right-3 bg-[#0a2b4e] text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-sans font-bold shadow-md border-2 border-white flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-[#18a692]"></span>
+            <div class="absolute bottom-3 right-3 bg-[#0a2b4e]/95 backdrop-blur-md text-white px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-sans font-bold shadow-md border border-white/20 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-[#18a692] animate-pulse"></span>
               <span>Nearly 3 Decades Experience</span>
             </div>
           </div>

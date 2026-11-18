@@ -409,6 +409,7 @@ export const siteData = {
     educationDegrees: "M.Sc. (Microbiology), MDPM, MBA (Personnel)",
     experienceYears: "Nearly Three Decades",
     location: "Vadodara, Gujarat, India",
+    image: "/pinkal-dave.jpg",
     email: "info@steriqual.co",
     phone: "+91 92651 67110",
     summary: "Pinkal Dave is a seasoned pharmaceutical quality and compliance leader with nearly three decades of experience across globally regulated pharmaceutical manufacturing environments. Throughout his distinguished career, he has held senior leadership positions with leading pharmaceutical organizations including Sun Pharmaceutical Industries, Emcure Pharmaceuticals, Intas Pharmaceuticals, LIVA Pharmaceuticals (Now Zydus), Alembic Pharmaceuticals, and Innoxel Lifesciences.",

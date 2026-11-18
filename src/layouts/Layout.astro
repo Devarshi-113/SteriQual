@@ -31,7 +31,8 @@ const structuredData = {
   "founder": {
     "@type": "Person",
     "name": siteData.founder.fullName,
-    "jobTitle": siteData.founder.title
+    "jobTitle": siteData.founder.title,
+    "image": siteData.founder.image
   }
 };
 ---
@@ -55,6 +56,7 @@ const structuredData = {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content={siteData.company.name} />
+    <meta property="og:image" content={siteData.founder.image} />
 
     <!-- Local Preload for Instrument Serif (Italic & Normal) -->
     <link rel="preload" href="/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin />
