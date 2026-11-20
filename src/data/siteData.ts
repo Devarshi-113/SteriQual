@@ -25,12 +25,13 @@ export interface EngagementModel {
 
 export const siteData = {
   company: {
-    name: "SteriQual",
-    legalName: "SteriQual Pharma Consulting",
+    name: "SteriSure",
+    legalName: "SteriSure Consulting",
+    logo: "/sterisure-logo.png",
     tagline: "Independent Specialist Advisory in Quality, Compliance & Sterility Assurance",
     headlineTag: "Independent Specialist Advisory",
     subheadline: "Independent pharmaceutical advisory for manufacturers for global regulated market. Providing practical quality governance, sterility assurance (EU-GMP Annex 1), and inspection preparedness.",
-    disclaimer: "SteriQual is an independent advisory practice founded by industry veteran Pinkal Dave. All operational metrics, audit tallies, and career benchmarks reflect the 30-year professional leadership track record of the Principal Consultant across premier pharmaceutical manufacturers.",
+    disclaimer: "SteriSure Consulting is an independent advisory practice founded by industry veteran Pinkal Dave. All operational metrics, audit tallies, and career benchmarks reflect the 30-year professional leadership track record of the Principal Consultant across premier pharmaceutical manufacturers.",
   },
 
   contact: {
@@ -38,11 +39,11 @@ export const siteData = {
     founderShortName: "Pinkal Dave",
     title: "Founder and Principal Consultant – Quality, Compliance & Sterile Operations",
     formerTitle: "Former Site Quality Head / Director – Quality",
-    email: "info@steriqual.co",
+    email: "info@sterisure.co",
     phone: "+91 92651 67110",
     phoneDisplay: "+91 92651 67110",
     whatsappNumber: "919265167110",
-    whatsappMessage: "Hello Mr. Dave, I am reaching out regarding SteriQual's sterile injectable quality and compliance consulting services.",
+    whatsappMessage: "Hello Mr. Dave, I am reaching out regarding SteriSure's sterile injectable quality and compliance consulting services.",
     location: "Vadodara, Gujarat, India",
     engagementReach: "India-based | Remote and on-site engagements across India and internationally",
     linkedin: "https://www.linkedin.com/in/pinkal-dave",
@@ -410,7 +411,7 @@ export const siteData = {
     experienceYears: "Nearly Three Decades",
     location: "Vadodara, Gujarat, India",
     image: "/pinkal-dave.jpg",
-    email: "info@steriqual.co",
+    email: "info@sterisure.co",
     phone: "+91 92651 67110",
     summary: "Pinkal Dave is a seasoned pharmaceutical quality and compliance leader with nearly three decades of experience across globally regulated pharmaceutical manufacturing environments. Throughout his distinguished career, he has held senior leadership positions with leading pharmaceutical organizations including Sun Pharmaceutical Industries, Emcure Pharmaceuticals, Intas Pharmaceuticals, LIVA Pharmaceuticals (Now Zydus), Alembic Pharmaceuticals, and Innoxel Lifesciences.",
     quote: "True regulatory compliance is never achieved through cosmetic documentation prepared weeks before an audit. It is an engineered culture where sterility assurance and data integrity are governed by scientific discipline on the cleanroom floor.",
