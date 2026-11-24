@@ -28,6 +28,7 @@ export const siteData = {
     name: "SteriSure",
     legalName: "SteriSure Consulting",
     logo: "/sterisure-logo.png",
+    linkedin: "https://www.linkedin.com/company/sterisure-consulting",
     tagline: "Independent Specialist Advisory in Quality, Compliance & Sterility Assurance",
     headlineTag: "Independent Specialist Advisory",
     subheadline: "Independent pharmaceutical advisory for manufacturers for global regulated market. Providing practical quality governance, sterility assurance (EU-GMP Annex 1), and inspection preparedness.",
@@ -46,7 +47,8 @@ export const siteData = {
     whatsappMessage: "Hello Mr. Dave, I am reaching out regarding SteriSure's sterile injectable quality and compliance consulting services.",
     location: "Vadodara, Gujarat, India",
     engagementReach: "India-based | Remote and on-site engagements across India and internationally",
-    linkedin: "https://www.linkedin.com/in/pinkal-dave",
+    linkedin: "https://www.linkedin.com/company/sterisure-consulting",
+    founderLinkedin: "https://www.linkedin.com/in/pinkal-dave",
     operatingHours: "Monday – Saturday: 9:00 AM – 7:00 PM IST",
   },
 

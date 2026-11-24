@@ -67,6 +67,19 @@ const currentYear = new Date().getFullYear();
         <div class="space-y-2 text-sm font-sans">
           <div><a href={`tel:${siteData.contact.phone}`} class="text-[#0a2b4e] font-bold hover:text-[#18a692] transition-colors">{siteData.contact.phoneDisplay}</a></div>
           <div><a href={`mailto:${siteData.contact.email}`} class="text-[#0a2b4e] hover:text-[#18a692] font-semibold transition-colors">{siteData.contact.email}</a></div>
+          <div class="pt-0.5">
+            <a 
+              href={siteData.company.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center gap-1.5 text-[#0a66c2] hover:text-[#004182] font-semibold transition-colors"
+            >
+              <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.85 6.45a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/>
+              </svg>
+              <span>LinkedIn: SteriSure Consulting ↗</span>
+            </a>
+          </div>
           <div class="text-xs text-slate-500 pt-1 font-sans">{siteData.contact.engagementReach}</div>
         </div>
       </div>
@@ -79,6 +92,17 @@ const currentYear = new Date().getFullYear();
         © {currentYear} {siteData.company.legalName}. All rights reserved.
       </div>
       <div class="flex items-center gap-6">
+        <a 
+          href={siteData.company.linkedin} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hover:text-[#0a66c2] transition-colors flex items-center gap-1.5 font-medium"
+        >
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.85 6.45a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
         <span class="text-slate-500">Independent Specialist Advisory</span>
         <a href="#contact" class="hover:text-[#18a692] transition-colors">Confidentiality Guarantee</a>
       </div>

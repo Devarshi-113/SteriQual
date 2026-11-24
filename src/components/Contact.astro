@@ -21,13 +21,13 @@ import { siteData } from '../data/siteData';
       </p>
     </div>
 
-    <!-- 3 Direct Contact Channels Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10">
+    <!-- 4 Direct Contact Channels Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
       
       <!-- Card 1: Direct Telephone & Mobile -->
-      <div class="p-8 rounded-3xl bg-gradient-to-br from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_45px_-10px_rgba(10,43,78,0.07)] flex flex-col justify-between hover:shadow-[0_16px_50px_-10px_rgba(10,43,78,0.12)] transition-all">
+      <div class="p-7 rounded-3xl bg-gradient-to-br from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_45px_-10px_rgba(10,43,78,0.07)] flex flex-col justify-between hover:shadow-[0_16px_50px_-10px_rgba(10,43,78,0.12)] transition-all">
         <div>
-          <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center justify-between mb-5">
             <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#f0faf8] to-[#e4f3f0] border-0 flex items-center justify-center text-[#0a2b4e] shadow-2xs">
               <svg class="w-6 h-6 text-[#0a2b4e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -41,25 +41,25 @@ import { siteData } from '../data/siteData';
           <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1">Direct Telephone &amp; Mobile</div>
           <a 
             href={`tel:${siteData.contact.phone}`} 
-            class="text-xl sm:text-2xl font-bold text-[#0a2b4e] hover:text-[#18a692] transition-colors block mb-2"
+            class="text-lg sm:text-xl font-bold text-[#0a2b4e] hover:text-[#18a692] transition-colors block mb-2"
           >
             {siteData.contact.phoneDisplay}
           </a>
-          <div class="text-xs text-slate-500 mb-4 font-sans flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div class="text-xs text-slate-500 mb-4 font-sans flex items-start gap-1.5">
+            <svg class="w-4 h-4 text-slate-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span>{siteData.contact.operatingHours}</span>
+            <span class="leading-relaxed">{siteData.contact.operatingHours}</span>
           </div>
-          <p class="text-sm text-slate-600 leading-relaxed font-sans mb-6">
-            Direct phone line for urgent regulatory matters, inspection escalation, or scheduling confidential consultations.
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans mb-6">
+            Direct phone line for urgent regulatory matters, inspection escalation, or confidential consultations.
           </p>
         </div>
 
         <div>
           <a
             href={`tel:${siteData.contact.phone}`}
-            class="w-full py-3.5 px-6 rounded-xl bg-[#0a2b4e] hover:bg-[#18a692] text-white font-bold text-sm shadow-md shadow-[#0a2b4e]/15 hover:shadow-[#18a692]/25 transition-all flex items-center justify-center gap-2 group"
+            class="w-full py-3.5 px-5 rounded-xl bg-[#0a2b4e] hover:bg-[#18a692] text-white font-bold text-sm shadow-md shadow-[#0a2b4e]/15 hover:shadow-[#18a692]/25 transition-all flex items-center justify-center gap-2 group"
           >
             <span>Call Directly</span>
             <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -70,9 +70,9 @@ import { siteData } from '../data/siteData';
       </div>
 
       <!-- Card 2: Official Advisory Email -->
-      <div class="p-8 rounded-3xl bg-gradient-to-br from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_45px_-10px_rgba(10,43,78,0.07)] flex flex-col justify-between hover:shadow-[0_16px_50px_-10px_rgba(10,43,78,0.12)] transition-all">
+      <div class="p-7 rounded-3xl bg-gradient-to-br from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_45px_-10px_rgba(10,43,78,0.07)] flex flex-col justify-between hover:shadow-[0_16px_50px_-10px_rgba(10,43,78,0.12)] transition-all">
         <div>
-          <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center justify-between mb-5">
             <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#f0faf8] to-[#e4f3f0] border-0 flex items-center justify-center text-[#0a2b4e] shadow-2xs">
               <svg class="w-6 h-6 text-[#0a2b4e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -86,25 +86,25 @@ import { siteData } from '../data/siteData';
           <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1">Direct Email Communication</div>
           <a 
             href={`mailto:${siteData.contact.email}`} 
-            class="text-xl sm:text-2xl font-bold text-[#0a2b4e] hover:text-[#18a692] transition-colors block mb-2 break-all"
+            class="text-lg sm:text-xl font-bold text-[#0a2b4e] hover:text-[#18a692] transition-colors block mb-2 break-all"
           >
             {siteData.contact.email}
           </a>
-          <div class="text-xs text-slate-500 mb-4 font-sans flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div class="text-xs text-slate-500 mb-4 font-sans flex items-start gap-1.5">
+            <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            <span>Strict confidentiality &amp; NDA observed</span>
+            <span class="leading-relaxed">Strict confidentiality &amp; NDA observed</span>
           </div>
-          <p class="text-sm text-slate-600 leading-relaxed font-sans mb-6">
-            Send engagement briefs, audit remediation parameters, or request an NDA-backed technical evaluation.
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans mb-6">
+            Send engagement briefs, audit remediation parameters, or request an NDA-backed evaluation.
           </p>
         </div>
 
         <div>
           <a
             href={`mailto:${siteData.contact.email}`}
-            class="w-full py-3.5 px-6 rounded-xl bg-[#0a2b4e] hover:bg-[#18a692] text-white font-bold text-sm shadow-md shadow-[#0a2b4e]/15 hover:shadow-[#18a692]/25 transition-all flex items-center justify-center gap-2 group"
+            class="w-full py-3.5 px-5 rounded-xl bg-[#0a2b4e] hover:bg-[#18a692] text-white font-bold text-sm shadow-md shadow-[#0a2b4e]/15 hover:shadow-[#18a692]/25 transition-all flex items-center justify-center gap-2 group"
           >
             <span>Send Email</span>
             <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -115,9 +115,9 @@ import { siteData } from '../data/siteData';
       </div>
 
       <!-- Card 3: Direct WhatsApp Channel -->
-      <div class="p-8 rounded-3xl bg-gradient-to-br from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_45px_-10px_rgba(10,43,78,0.07)] flex flex-col justify-between hover:shadow-[0_16px_50px_-10px_rgba(10,43,78,0.12)] transition-all">
+      <div class="p-7 rounded-3xl bg-gradient-to-br from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_45px_-10px_rgba(10,43,78,0.07)] flex flex-col justify-between hover:shadow-[0_16px_50px_-10px_rgba(10,43,78,0.12)] transition-all">
         <div>
-          <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center justify-between mb-5">
             <div class="w-12 h-12 rounded-2xl bg-emerald-50 border-0 flex items-center justify-center text-emerald-600 shadow-2xs">
               <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                 <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.69C8.86 7.69 8.56 7.76 8.32 8.02C8.07 8.28 7.39 8.92 7.39 10.22C7.39 11.52 8.34 12.78 8.47 12.95C8.6 13.12 10.3 15.89 12.97 16.94C15.19 17.81 15.64 17.64 16.12 17.59C16.6 17.55 17.67 16.96 17.89 16.33C18.11 15.7 18.11 15.16 18.04 15.05C17.97 14.94 17.8 14.88 17.54 14.75C17.29 14.62 16.03 14 15.8 13.91C15.57 13.82 15.4 13.78 15.23 14.04C15.06 14.3 14.58 14.88 14.43 15.05C14.28 15.22 14.13 15.24 13.88 15.11C13.63 14.98 12.82 14.72 11.86 13.86C11.11 13.19 10.6 12.36 10.45 12.11C10.3 11.86 10.43 11.72 10.56 11.59C10.68 11.47 10.82 11.28 10.96 11.12C11.1 10.96 11.15 10.84 11.24 10.67C11.33 10.5 11.28 10.35 11.22 10.22C11.15 10.1 10.65 8.87 10.44 8.37C10.25 7.89 10.05 7.95 9.89 7.95C9.75 7.94 9.58 7.69 9.04 7.69Z"/>
@@ -133,16 +133,16 @@ import { siteData } from '../data/siteData';
             href={`https://wa.me/${siteData.contact.whatsappNumber}?text=${encodeURIComponent(siteData.contact.whatsappMessage)}`}
             target="_blank"
             rel="noopener noreferrer"
-            class="text-xl sm:text-2xl font-bold text-emerald-700 hover:text-emerald-800 transition-colors block mb-2"
+            class="text-lg sm:text-xl font-bold text-emerald-700 hover:text-emerald-800 transition-colors block mb-2"
           >
             {siteData.contact.phoneDisplay}
           </a>
-          <div class="text-xs text-slate-500 mb-4 font-sans flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>Quick consultation &amp; scheduling</span>
+          <div class="text-xs text-slate-500 mb-4 font-sans flex items-start gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0 mt-1"></span>
+            <span class="leading-relaxed">Quick consultation &amp; scheduling</span>
           </div>
-          <p class="text-sm text-slate-600 leading-relaxed font-sans mb-6">
-            Direct mobile messaging channel for rapid scoping, timeline alignment, and immediate technical inquiries.
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans mb-6">
+            Direct mobile messaging channel for rapid scoping, timeline alignment, and technical queries.
           </p>
         </div>
 
@@ -151,9 +151,56 @@ import { siteData } from '../data/siteData';
             href={`https://wa.me/${siteData.contact.whatsappNumber}?text=${encodeURIComponent(siteData.contact.whatsappMessage)}`}
             target="_blank"
             rel="noopener noreferrer"
-            class="w-full py-3.5 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md shadow-emerald-600/15 hover:shadow-emerald-600/25 transition-all flex items-center justify-center gap-2 group"
+            class="w-full py-3.5 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md shadow-emerald-600/15 hover:shadow-emerald-600/25 transition-all flex items-center justify-center gap-2 group"
           >
             <span>Message on WhatsApp</span>
+            <span class="transition-transform group-hover:translate-x-0.5">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4: Corporate LinkedIn Page -->
+      <div class="p-7 rounded-3xl bg-gradient-to-br from-white via-[#fbfdfd] to-[#edf7f5]/40 border-0 shadow-[0_12px_45px_-10px_rgba(10,43,78,0.07)] flex flex-col justify-between hover:shadow-[0_16px_50px_-10px_rgba(10,43,78,0.12)] transition-all">
+        <div>
+          <div class="flex items-center justify-between mb-5">
+            <div class="w-12 h-12 rounded-2xl bg-[#0a66c2]/10 border-0 flex items-center justify-center text-[#0a66c2] shadow-2xs">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.85 6.45a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/>
+              </svg>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#0a66c2]/10 text-[#0a66c2]">
+              Company Page
+            </span>
+          </div>
+
+          <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1">Corporate LinkedIn</div>
+          <a
+            href={siteData.company.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-lg sm:text-xl font-bold text-[#0a66c2] hover:text-[#004182] transition-colors block mb-2"
+          >
+            SteriSure Consulting
+          </a>
+          <div class="text-xs text-slate-500 mb-4 font-sans flex items-start gap-1.5">
+            <svg class="w-4 h-4 text-[#0a66c2] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+            </svg>
+            <span class="leading-relaxed">Industry insights &amp; updates</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans mb-6">
+            Follow SteriSure Consulting on LinkedIn for regulatory inspection updates, sterility assurance guidance, and corporate news.
+          </p>
+        </div>
+
+        <div>
+          <a
+            href={siteData.company.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full py-3.5 px-5 rounded-xl bg-[#0a66c2] hover:bg-[#004182] text-white font-bold text-sm shadow-md shadow-[#0a66c2]/15 hover:shadow-[#0a66c2]/25 transition-all flex items-center justify-center gap-2 group"
+          >
+            <span>Follow on LinkedIn</span>
             <span class="transition-transform group-hover:translate-x-0.5">↗</span>
           </a>
         </div>
@@ -195,6 +242,19 @@ import { siteData } from '../data/siteData';
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
             All corporate discussions, site inspection findings, and remediation parameters are conducted under customary non-disclosure agreements (NDAs) to protect your regulatory and operational confidentiality.
           </p>
+          <div class="mt-3.5 pt-3 border-t border-slate-100 flex items-center gap-2">
+            <a
+              href={siteData.company.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0a66c2] hover:text-[#004182] transition-colors"
+            >
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.85 6.45a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/>
+              </svg>
+              <span>Connect with SteriSure on LinkedIn ↗</span>
+            </a>
+          </div>
         </div>
 
       </div>
